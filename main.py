@@ -8,7 +8,6 @@ def is_isogram(string):
 
 # If the parameter is itself not a perfect square then -1 should be returned. You may assume the parameter is non-negative.
 
-# Examples:(Input --> Output)
 
 # 121 --> 144
 # 625 --> 676
