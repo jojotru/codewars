@@ -9,9 +9,9 @@ def is_isogram(string):
 # If the parameter is itself not a perfect square then -1 should be returned. You may assume the parameter is non-negative.
 
 
-121 --> 144
-625 --> 676
-114 --> -1 since 114 is not a perfect square
+# 121 --> 144
+# 625 --> 676
+# 114 --> -1 since 114 is not a perfect square
 
 
 
