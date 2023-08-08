@@ -31,3 +31,14 @@ def find_next_square(sq):
 # XO("ooxXm") => true
 # XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 # XO("zzoo") => false
+
+def xo(s):
+    return s.lower().count('x') == s.lower().count('o')
+
+# Other good solutions:
+def xo(s):
+    s = s.lower()
+    return s.count('x') == s.count('o')
+
+def xo(s):
+    return True if s.lower().count('x') == s.lower().count('o') else False
