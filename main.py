@@ -88,3 +88,22 @@ def solution(string, ending):
 
 def stray(arr):
     return [num for num in arr if arr.count(num) == 1][0]
+
+# Your task is to write a function maskify, which changes all but the last four characters into '#'.
+
+# Examples (input --> output):
+# "4556364607935616" --> "############5616"
+#      "64607935616" -->      "#######5616"
+#                "1" -->                "1"
+#                 "" -->                 ""
+
+
+def maskify(cc):
+    l = len(cc)
+    if l <= 4: return cc
+    return (l - 4) * '#' + cc[-4:]
+
+#Or
+
+def maskify(cc):
+    return "#"*(len(cc)-4) + cc[-4:]
