@@ -3,7 +3,7 @@
 def is_isogram(string):
     return len(string) == len(set(string.lower()))
 
-
+#__________
 #Complete the findNextSquare method that finds the next integral perfect square after the one passed as a parameter. Recall that an integral perfect square is an integer n such that sqrt(n) is also an integer.
 
 # If the parameter is itself not a perfect square then -1 should be returned. You may assume the parameter is non-negative.
@@ -20,7 +20,7 @@ import math
 
 def find_next_square(sq):
     return (math.sqrt(sq) + 1) ** 2 if (math.sqrt(sq)).is_integer() else -1
-
+#__________
 
 # Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
@@ -43,7 +43,7 @@ def xo(s):
 def xo(s):
     return True if s.lower().count('x') == s.lower().count('o') else False
 
-
+#__________
 # Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list.
 
 # Don't change the order of the elements that are left.
