@@ -107,3 +107,21 @@ def maskify(cc):
 
 def maskify(cc):
     return "#"*(len(cc)-4) + cc[-4:]
+
+#Given a string of words, return the length of the shortest word(s).
+
+#String will never be empty and you do not need to account for different data types.
+
+def find_short(s):
+    l = map(len, s.split())
+    return min(l)
+
+#other solutions that would've worked:
+
+def find_short(s):
+    return min(len(x) for x in s.split())
+
+#or
+
+def find_short(s):
+    return min(map(len, s.split(' ')))
