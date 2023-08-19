@@ -75,7 +75,7 @@ def remove_smallest(numbers):
 def solution(string, ending):
     return string.endswith(ending)
 
-
+#__________
 # You are given an odd-length array of integers, in which all of them are the same, except for one single number.
 
 # Complete the method which accepts such an array, and returns that single different number.
@@ -88,7 +88,7 @@ def solution(string, ending):
 
 def stray(arr):
     return [num for num in arr if arr.count(num) == 1][0]
-
+#__________
 # Your task is to write a function maskify, which changes all but the last four characters into '#'.
 
 # Examples (input --> output):
@@ -107,7 +107,7 @@ def maskify(cc):
 
 def maskify(cc):
     return "#"*(len(cc)-4) + cc[-4:]
-
+#__________
 #Given a string of words, return the length of the shortest word(s).
 
 #String will never be empty and you do not need to account for different data types.
@@ -125,7 +125,7 @@ def find_short(s):
 
 def find_short(s):
     return min(map(len, s.split(' ')))
-
+#__________
 # Make a program that filters a list of strings and returns a list with only your friends name in it.
 
 # If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
@@ -139,7 +139,7 @@ def find_short(s):
 def friend(x):
     return[n for n in x if len(n) == 4]
 
-
+#__________
 # DropCaps means that the first letter of the starting word of the paragraph should be in caps and the remaining lowercase, just like you see in the newspaper.
 
 # But for a change, let"s do that for each and every word of the given String. Your task is to capitalize every word that has length greater than 2, leaving smaller words as they are.
@@ -156,7 +156,7 @@ def drop_cap(str_):
     return ' '.join( w.capitalize() if len(w) > 2 else w for w in str_.split(' ') )
 
 
-
+#__________
 # Given a list of integers, determine whether the sum of its elements is odd or even.
 
 # Give your answer as a string matching "odd" or "even".
@@ -177,7 +177,7 @@ def drop_cap(str_):
 def oddOrEven(arr):
     return 'even' if sum(arr) % 2 == 0 else 'odd'
 
-
+#__________
 # In this kata, you are asked to square every digit of a number and concatenate them.
 
 # For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
