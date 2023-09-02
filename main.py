@@ -184,14 +184,14 @@ def oddOrEven(arr):
 
 # Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
 
-def square_digits(num):
-    num = str(num)
-    ans = ''
-    for i in num:
-        ans += str(int(i)**2)
-    return int(ans)
+# def square_digits(num):
+#     num = str(num)
+#     ans = ''
+#     for i in num:
+#         ans += str(int(i)**2)
+#     return int(ans)
 
-#or
+# #or
 
-def square_digits(num):
-    return int(''.join(str(int(d)**2) for d in str(num)))
+# def square_digits(num):
+#     return int(''.join(str(int(d)**2) for d in str(num)))
