@@ -220,6 +220,7 @@ def number(lines):
 def number(lines):
     return [f"{i}: {j}" for i,j in enumerate(lines,1)] 
 
+#-----------------
 
 # The two oldest ages function/method needs to be completed. It should take an array of numbers as its argument and return the two highest numbers within the array. The returned value should be an array in the format [second oldest age,  oldest age].
 
@@ -241,6 +242,8 @@ def two_oldest_ages(ages):
     ages.remove(max_number)
     return [max(ages), max_number]
 
+#-----------------
+
 # Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
 
 # For example, if this array were passed as an argument:
@@ -258,3 +261,5 @@ def sort_by_length(arr):
     return arr 
 
 #:)
+
+#-----------------
