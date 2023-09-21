@@ -328,3 +328,16 @@ def multiplication_table(size):
 def multiplicationTable(size):
     return [[j*i for j in range(1, size+1)] for i in range(1, size+1)]
 
+
+# In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+
+# If anything in the text isn't a letter, ignore it and don't return it.
+
+# "a" = 1, "b" = 2, etc.
+
+# Example
+# alphabet_position("The sunset sets at twelve o' clock.")
+# Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" ( as a string )
+
+def alphabet_position(s):
+  return " ".join(str(ord(c)-ord("a")+1) for c in s.lower() if c.isalpha())
