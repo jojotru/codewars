@@ -389,3 +389,8 @@ def encrypt_this(text):
 # print(fruit[1:-1])
 
 # prints: ppl starting with the first letter 1 => 'p' then ending with the -1 letter "e" 
+
+# Complete the square sum function so that it squares each number passed into it and then sums the results together.
+# So 1, 2, 2 will be 1^2 + 2^2 + 2^2 = 9
+
+return sum([num*num for num in numbers])
