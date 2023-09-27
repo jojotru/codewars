@@ -393,4 +393,13 @@ def encrypt_this(text):
 # Complete the square sum function so that it squares each number passed into it and then sums the results together.
 # So 1, 2, 2 will be 1^2 + 2^2 + 2^2 = 9
 
-return sum([num*num for num in numbers])
+def square_sum(numbers):
+    return sum([num*num for num in numbers])
+
+# Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+def even_or_odd(number):
+  if number % 2 == 0:
+    return "Even"
+  else:
+    return "Odd"
