@@ -434,3 +434,17 @@ def positive_sum(arr):
         if x > 0:
             sum = sum + x
     return sum
+
+# Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
+
+# For example:
+
+# a = 1
+# b = 4
+# --> [1, 2, 3, 4]
+
+def between(a,b):
+    l = []
+    for v in range(a,b + 1):
+        l.append(v);
+    return l
