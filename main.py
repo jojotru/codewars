@@ -443,8 +443,16 @@ def positive_sum(arr):
 # b = 4
 # --> [1, 2, 3, 4]
 
-# def between(a,b):
-#     l = []
-#     for v in range(a,b + 1):
-#         l.append(v);
-#     return l
+def between(a,b):
+    l = []
+    for v in range(a,b + 1):
+        l.append(v);
+    return l
+
+# Complete the function which converts a binary number (given as a string) to a decimal number.
+
+# You use the built-int() function, and pass it the base of the input number, i.e. 2 for a binary number:
+
+def bin_to_decimal(inp):
+    return int(inp, 2)
+
