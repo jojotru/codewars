@@ -453,6 +453,6 @@ def between(a,b):
 
 # You use the built-int() function, and pass it the base of the input number, i.e. 2 for a binary number:
 
-def bin_to_decimal(inp):
-    return int(inp, 2)
+# def bin_to_decimal(inp):
+#     return int(inp, 2)
 
