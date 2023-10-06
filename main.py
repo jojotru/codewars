@@ -479,11 +479,27 @@ def make_negative( number ):
 
 # For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
 
-# def find_difference(a, b):
-#     nums = 1
-#     numss = 1
-#     for i in a:
-#         nums = nums * i
-#     for j in b:
-#         numss = numss * j
-#     return int(abs(nums - numss))
+def find_difference(a, b):
+    nums = 1
+    numss = 1
+    for i in a:
+        nums = nums * i
+    for j in b:
+        numss = numss * j
+    return int(abs(nums - numss))
+
+# Write a function that merges two sorted arrays into a single one. The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
+
+def merge_arrays(a, b): 
+    return sorted(set(a + b))
+
+# OR
+
+def merge_arrays(first, second): 
+    working = []
+    for e in first:
+        if e not in working:
+            working.append(e)
+    for i in second:
+        if i not in working:
+            working.append(i)
