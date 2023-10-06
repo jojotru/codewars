@@ -479,11 +479,11 @@ def make_negative( number ):
 
 # For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
 
-def find_difference(a, b):
-    nums = 1
-    numss = 1
-    for i in a:
-        nums = nums * i
-    for j in b:
-        numss = numss * j
-    return int(abs(nums - numss))
+# def find_difference(a, b):
+#     nums = 1
+#     numss = 1
+#     for i in a:
+#         nums = nums * i
+#     for j in b:
+#         numss = numss * j
+#     return int(abs(nums - numss))
