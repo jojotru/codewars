@@ -404,6 +404,8 @@ def even_or_odd(number):
   else:
     return "Odd"
   
+#______________________
+  
 #   While making a game, your partner, Greg, decided to create a function to check if the user is still alive called checkAlive/CheckAlive/check_alive. Unfortunately, Greg made some errors while creating the function.
 
 # checkAlive/CheckAlive/check_alive should return true if the player's health is greater than 0 or false if it is 0 or below.
@@ -416,6 +418,7 @@ def check_alive(health):
     else:
         return True
     
+#______________________
 
 # You get an array of numbers, return the sum of all of the positives ones.
 
@@ -435,6 +438,8 @@ def positive_sum(arr):
             sum = sum + x
     return sum
 
+#______________________
+
 # Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
 
 # For example:
@@ -449,12 +454,16 @@ def between(a,b):
         l.append(v);
     return l
 
+#______________________
+
 # Complete the function which converts a binary number (given as a string) to a decimal number.
 
 # You use the built-int() function, and pass it the base of the input number, i.e. 2 for a binary number:
 
 def bin_to_decimal(inp):
     return int(inp, 2)
+
+#______________________
 
 # In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 
@@ -475,6 +484,8 @@ def make_negative( number ):
     else:
         return -number
     
+#______________________
+
 # In this simple exercise, you will create a program that will take two lists of integers, a and b. Each list will consist of 3 positive integers above 0, representing the dimensions of cuboids a and b. You must find the difference of the cuboids' volumes regardless of which is bigger.
 
 # For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
@@ -487,6 +498,8 @@ def find_difference(a, b):
     for j in b:
         numss = numss * j
     return int(abs(nums - numss))
+
+#______________________
 
 # Write a function that merges two sorted arrays into a single one. The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
 
@@ -503,6 +516,8 @@ def merge_arrays(first, second):
     for i in second:
         if i not in working:
             working.append(i)
+
+#______________________
 
 # Write a function that accepts two numbers a and b and returns whether a is smaller than, bigger than, or equal to b, as a string.
 
@@ -521,3 +536,20 @@ def no_ifs_no_buts(a, b):
         a < b: str(a) + " is smaller than " + str(b),
         a > b: str(a) + " is greater than " + str(b),
     }[True]
+
+#______________________
+
+# Given an array of integers your solution should find the smallest integer.
+
+# For example:
+
+# Given [34, 15, 88, 2] your solution will return 2
+# Given [34, -345, -1, 100] your solution will return -345
+# You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+
+
+def findSmallestInt(arr):
+    return min(arr)
+
+#______________________
