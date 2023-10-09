@@ -561,3 +561,41 @@ def findSmallestInt(arr):
 def array_plus_array(arr1,arr2):
     num = sum(arr1) + sum(arr2)
     return(num)
+
+# We need a function that can transform a number (integer) into a string.
+
+# What ways of achieving this do you know?
+
+# Examples (input --> output):
+# 123  --> "123"
+# 999  --> "999"
+# -100 --> "-100"
+
+def function(num):
+    return str(num)
+
+
+# Nickname Generator
+
+# Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname.
+
+# If the 3rd letter is a consonant, return the first 3 letters.
+
+# nickname("Robert") //=> "Rob"
+# nickname("Kimberly") //=> "Kim"
+# nickname("Samantha") //=> "Sam"
+# If the 3rd letter is a vowel, return the first 4 letters.
+
+# nickname("Jeannie") //=> "Jean"
+# nickname("Douglas") //=> "Doug"
+# nickname("Gregory") //=> "Greg"
+# If the string is less than 4 characters, return "Error: Name too short".
+
+
+def nickname_generator(name):
+    if len(name) < 4:
+        return "Error: Name too short"
+    elif name[2] not in 'aeiou': 
+        return name[:3]
+    elif name[2] in 'aeiou':
+        return name[:4]
