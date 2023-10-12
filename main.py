@@ -562,6 +562,8 @@ def array_plus_array(arr1,arr2):
     num = sum(arr1) + sum(arr2)
     return(num)
 
+#______________________
+
 # We need a function that can transform a number (integer) into a string.
 
 # What ways of achieving this do you know?
@@ -573,7 +575,7 @@ def array_plus_array(arr1,arr2):
 
 def function(num):
     return str(num)
-
+#______________________
 
 # Nickname Generator
 
@@ -600,6 +602,8 @@ def nickname_generator(name):
     elif name[2] in 'aeiou':
         return name[:4]
     
+#______________________
+
 # Colour plays an important role in our lifes. Most of us like this colour better then another. User experience specialists believe that certain colours have certain psychological meanings for us.
 
 # You are given a 2D array, composed of a colour and its 'common' association in each array element. The function you will write needs to return the colour as 'key' and association as its 'value'.
@@ -610,6 +614,8 @@ def nickname_generator(name):
 
 def colour_association(arr):
     return [{i[0] : i[1]} for i in arr]
+
+#______________________
 
 # You are the greatest chef on earth. No one boils eggs like you! Your restaurant is always full of guests, who love your boiled eggs. But when there is a greater order of boiled eggs, you need some time, because you have only one pot for your job. How much time do you need?
 
@@ -638,3 +644,5 @@ def cooking_time(eggs):
         eggs -= 8
     
     return t
+
+#______________________
