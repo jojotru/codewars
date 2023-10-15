@@ -659,6 +659,8 @@ def reduce_fraction(fraction):
     t = Fraction(*fraction)
     return (t.numerator, t.denominator)
 
+#______________
+
 # In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
 # Example
@@ -669,3 +671,5 @@ def reduce_fraction(fraction):
 def filter_list(l):
   'return a new list with the strings filtered out'
   return [x for x in l if type(x) is not str]
+
+#______________
