@@ -628,48 +628,48 @@ def colour_association(arr):
 # we assume, that the water is boiling all the time (no time to heat up)
 # for simplicity we also don't consider the time it takes to put eggs into the pot or get them out of it
 
-import math
+# import math
 
-def cooking_time(eggs):
-    time = 5
-    eggz = 8
-    return math.ceil(eggs/eggz)*time
+# def cooking_time(eggs):
+#     time = 5
+#     eggz = 8
+#     return math.ceil(eggs/eggz)*time
 
-#OR
+# #OR
 
-def cooking_time(eggs):
-    t = 0
-    while( eggs > 0 ):
-        t += 5
-        eggs -= 8
+# def cooking_time(eggs):
+#     t = 0
+#     while( eggs > 0 ):
+#         t += 5
+#         eggs -= 8
     
-    return t
+#     return t
 
-#______________________
+# #______________________
 
-# Write a function which reduces fractions to their simplest form! Fractions will be presented as an array/tuple (depending on the language) of strictly positive integers, and the reduced fraction must be returned as an array/tuple:
+# # Write a function which reduces fractions to their simplest form! Fractions will be presented as an array/tuple (depending on the language) of strictly positive integers, and the reduced fraction must be returned as an array/tuple:
 
-# input:   [numerator, denominator]
-# output:  [reduced numerator, reduced denominator]
-# example: [45, 120] --> [3, 8]
-# All numerators and denominators will be positive integers.
+# # input:   [numerator, denominator]
+# # output:  [reduced numerator, reduced denominator]
+# # example: [45, 120] --> [3, 8]
+# # All numerators and denominators will be positive integers.
 
-from fractions import Fraction
-def reduce_fraction(fraction):
-    t = Fraction(*fraction)
-    return (t.numerator, t.denominator)
+# from fractions import Fraction
+# def reduce_fraction(fraction):
+#     t = Fraction(*fraction)
+#     return (t.numerator, t.denominator)
 
-#______________
+# #______________
 
-# In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+# # In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
-# Example
-# filter_list([1,2,'a','b']) == [1,2]
-# filter_list([1,'a','b',0,15]) == [1,0,15]
-# filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+# # Example
+# # filter_list([1,2,'a','b']) == [1,2]
+# # filter_list([1,'a','b',0,15]) == [1,0,15]
+# # filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 
-def filter_list(l):
-  'return a new list with the strings filtered out'
-  return [x for x in l if type(x) is not str]
+# def filter_list(l):
+#   'return a new list with the strings filtered out'
+#   return [x for x in l if type(x) is not str]
 
-#______________
+# #______________
