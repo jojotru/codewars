@@ -693,3 +693,29 @@ def get_planet_name(id):
         case 7: name = "Uranus"  
         case 8: name = "Neptune"
     return name
+
+# Work out what number day of the year it is.
+
+# toDayOfYear([1, 1, 2000]) => 1
+# The argument passed into the function is an array with the format [D, M, YYYY], e.g. [1, 2, 2000] for February 1st, 2000 or [22, 12, 1999] for December 22nd, 1999.
+
+# Don't forget to check for whether it's a leap year! Three criteria must be taken into account to identify leap years:
+
+# The year can be evenly divided by 4;
+# If the year can be evenly divided by 100, it is NOT a leap year, unless;
+# The year is also evenly divisible by 400. Then it is a leap year.
+
+def to_day_of_year(date):
+    # Define the number of days in each month, accounting for leap years
+    days_in_month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+    day, month, year = date
+
+    # Check if it's a leap year and update February's days
+    if ((year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)):
+        days_in_month[2] = 29
+
+    # Calculate the day of the year
+    day_of_year = sum(days_in_month[:month]) + day
+
+    return day_of_year
