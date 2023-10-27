@@ -803,3 +803,9 @@ class Person:
 class Person:
     def __init__(self, name, age):
         self.info = f"{name}s age is {age}"
+
+
+# Write a function that merges two sorted arrays into a single one. The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
+
+def merge_arrays(first, second): 
+    return sorted(set(first + second))
