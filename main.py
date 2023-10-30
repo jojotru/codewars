@@ -859,3 +859,96 @@ def uglify_word(s: str) -> str:
             continue
     return (''.join(result))
 
+
+
+# Your start-up's BA has told marketing that your website has a large audience in Scandinavia and surrounding countries. Marketing thinks it would be great to welcome visitors to the site in their own language. Luckily you already use an API that detects the user's location, so this is an easy win.
+
+# The Task
+# Think of a way to store the languages as a database. The languages are listed below so you can copy and paste!
+# Write a 'welcome' function that takes a parameter 'language', with a type String, and returns a greeting - if you have it in your database. It should default to English if the language is not in the database, or in the event of an invalid input.
+
+
+def greet(language):
+    return {
+        'czech': 'Vitejte',
+        'danish': 'Velkomst',
+        'dutch': 'Welkom',
+        'english': 'Welcome',
+        'estonian': 'Tere tulemast',
+        'finnish': 'Tervetuloa',
+        'flemish': 'Welgekomen',
+        'french': 'Bienvenue',
+        'german': 'Willkommen',
+        'irish': 'Failte',
+        'italian': 'Benvenuto',
+        'latvian': 'Gaidits',
+        'lithuanian': 'Laukiamas',
+        'polish': 'Witamy',
+        'spanish': 'Bienvenido',
+        'swedish': 'Valkommen',
+        'welsh': 'Croeso'
+    }.get(language, 'Welcome')
+
+#OR
+
+def greet(language):
+    greets = {
+        'english': 'Welcome',
+        'czech': 'Vitejte',
+        'danish': 'Velkomst',
+        'dutch': 'Welkom',
+        'estonian': 'Tere tulemast',
+        'finnish': 'Tervetuloa',
+        'flemish': 'Welgekomen',
+        'french': 'Bienvenue',
+        'german': 'Willkommen',
+        'irish': 'Failte',
+        'italian': 'Benvenuto',
+        'latvian': 'Gaidits',
+        'lithuanian': 'Laukiamas',
+        'polish': 'Witamy',
+        'spanish': 'Bienvenido',
+        'swedish': 'Valkommen',
+        'welsh': 'Croeso'
+    }
+    return greets[language] if language in greets else "Welcome"
+
+#OR
+
+def greet(language):
+  if language=='english':
+    return('Welcome')
+  elif language=='czech':
+    return('Vitejte')
+  elif language=='danish':
+    return('Velkomst')
+  elif language=='dutch':
+    return ('Welkom')
+  elif language=='estonian':
+    return('Tere tulemast')
+  elif language=='finnish':
+    return('Tervetuloa')
+  elif language=='flemish':
+    return('Welgekomen')
+  elif language=='french':
+    return('Bienvenue')
+  elif language=='german':
+    return('Willkommen')
+  elif language=='irish':
+    return('Failte')
+  elif language=='italian':
+    return('Benvenuto')
+  elif language=='latvian':
+    return ('Gaidits')
+  elif language=='lithuanian':
+    return ('Laukiamas')
+  elif language=='polish':
+    return ('Witamy')
+  elif language=='spanish':
+    return('Bienvenido')
+  elif language=='swedish':
+    return('Valkommen')
+  elif language=='welsh':
+    return('Croeso')
+  else:
+    return('Welcome')
