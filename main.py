@@ -968,3 +968,4 @@ def greet(language):
 # elevatorDistance([3,3]) = 0
 # Array will always contain at least 2 floors. Random tests will contain 2-20 elements in array, and floor values between 0 and 30.
 
+ return sum([abs(array[i] - array[i+1]) for i in range(len(array)-1)])
