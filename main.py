@@ -981,3 +981,25 @@ def greet(language):
 
 def only_one(*args):
     return args.count(True)==1
+
+# What is Python *args?
+# The special syntax *args in function definitions in Python is used to pass a variable number of arguments to a function. It is used to pass a non-keyworded, variable-length argument list. 
+
+# The syntax is to use the symbol * to take in a variable number of arguments; by convention, it is often used with the word args.
+# What *args allows you to do is take in more arguments than the number of formal arguments that you previously defined. With *args, any number of extra arguments can be tacked on to your current formal parameters (including zero extra arguments).
+# For example, we want to make a multiply function that takes any number of arguments and is able to multiply them all together. It can be done using *args.
+# Using the *, the variable that we associate with the * becomes iterable meaning you can do things like iterate over it, run some higher-order functions such as map and filter, etc.
+
+#__________________
+
+# You will get a list with several scattered numbers
+
+# You must check that the sum of the two values on both sides equals the sum of the rest of the list elements
+
+# And if not, delete the two elements on the sides and check repeatedly,
+
+# until you reach the condition checklist:
+
+# The sum of the list without the sides = the sum of the sides
+
+# If it never equals return an empty list []
