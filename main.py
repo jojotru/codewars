@@ -1003,3 +1003,7 @@ def only_one(*args):
 # The sum of the list without the sides = the sum of the sides
 
 # If it never equals return an empty list []
+
+def plastic_balance(L):
+    if L and L[0]+L[-1]!=sum(L[1:-1]): return plastic_balance(L[1:-1])
+    return L
