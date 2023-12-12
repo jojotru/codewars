@@ -1009,3 +1009,38 @@ def plastic_balance(L):
     return L
 
 #____________________
+
+# Write a simple regex to validate a username. Allowed characters are:
+
+# lowercase letters,
+# numbers,
+# underscore
+# Length should be between 4 and 16 characters (both included).
+
+def validate_usr(username):
+    numeric="0123456789"
+    if len(username)>=4 and len(username)<=16:
+        for letter in username:
+            status = 0
+            if letter.islower() or letter == "_":
+                status = 1
+            for num in numeric:
+                if letter == num:
+                    status = 1
+            if status == 0:
+                return False
+        return True
+    else:
+        return False
+    
+
+    #OR
+
+def validate_usr(username):
+    if len(username) < 4 or len(username) > 16:
+        return False 
+    allowed = 'abcdefghijklmnopqrstuvwxyz0123456789_'
+    for i in username:
+        if i not in allowed:
+            return False
+    return True
