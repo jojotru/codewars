@@ -969,7 +969,8 @@ def greet(language):
 # elevatorDistance([3,3]) = 0
 # Array will always contain at least 2 floors. Random tests will contain 2-20 elements in array, and floor values between 0 and 30.
 
- return sum([abs(array[i] - array[i+1]) for i in range(len(array)-1)])
+
+# return sum([abs(array[i] - array[i+1]) for i in range(len(array)-1)])
 
 
 # Given any number of boolean flags function should return true if and only if one of them is true while others are false. If function is called without arguments it should return false.
@@ -1044,3 +1045,12 @@ def validate_usr(username):
         if i not in allowed:
             return False
     return True
+
+# Write a function that takes a list of at least four elements as an argument and returns a list of the middle two or three elements in reverse order.
+
+def reverse_middle(lst):
+    l = len(lst)//2 - 1
+    return lst[l:-l][::-1]
+
+
+
