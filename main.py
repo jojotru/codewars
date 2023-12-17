@@ -1065,3 +1065,13 @@ def multiply(n):
     x = n * (5**len(str(abs(n))))
     return x
 
+# HELP! Jason can't find his textbook! It is two days before the test date, and Jason's textbooks are all out of order! Help him sort a list (ArrayList in java) full of textbooks by subject, so he can study before the test.
+
+def sorter(textbooks):
+    return sorted(textbooks,key=str.lower)
+
+#or
+
+def sorter(textbooks):
+    return sorted(textbooks, key=str.casefold)
+#**** .casefold will sort while being case insensitive. 
