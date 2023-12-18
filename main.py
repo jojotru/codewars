@@ -451,7 +451,7 @@ def positive_sum(arr):
 def between(a,b):
     l = []
     for v in range(a,b + 1):
-        l.append(v);
+        l.append(v):
     return l
 
 #______________________
@@ -1075,3 +1075,33 @@ def sorter(textbooks):
 def sorter(textbooks):
     return sorted(textbooks, key=str.casefold)
 #**** .casefold will sort while being case insensitive. 
+
+# Write a function that will check if two given characters are the same case.
+
+# If either of the characters is not a letter, return -1
+# If both characters are the same case, return 1
+# If both characters are letters, but not the same case, return 0
+# Examples
+# 'a' and 'g' returns 1
+
+# 'A' and 'C' returns 1
+
+# 'b' and 'G' returns 0
+
+# 'B' and 'g' returns 0
+
+# '0' and '?' returns -1
+
+def same_case(a, b):
+    return a.isupper() == b.isupper() if a.isalpha() and b.isalpha() else -1
+
+#OR
+
+def same_case(a, b): 
+    if a.isalpha() and b.isalpha():
+        if (a.islower() and b.islower()) or (a.isupper() and b.isupper()):
+            return 1
+        else:
+            return 0
+    else:
+        return -1
