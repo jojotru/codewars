@@ -1121,3 +1121,8 @@ def same_case(a, b):
 
 def hello(name=""):
     return "Hello, " + name.title()+"!" if len(name)>1  else "Hello, World!"
+
+# Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . The input is the amount of USD as an integer, and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
+
+def usdcny(usd):
+    return "1 Chinese Yuan"
