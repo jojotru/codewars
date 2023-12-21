@@ -1124,5 +1124,14 @@ def hello(name=""):
 
 # Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . The input is the amount of USD as an integer, and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
 
+
+def usdcny(answer):
+    
+    answer = str(round(answer * 6.75, 1))
+    
+    return ( answer + "1 Chinese Yuan")
+
+#Or
+
 def usdcny(usd):
-    return "1 Chinese Yuan"
+    return f'{6.75 * usd :.2f} Chinese Yuan'
