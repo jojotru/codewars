@@ -1141,3 +1141,5 @@ def usdcny(usd):
 # Input
 # Two Strings, no validation is needed.
 
+def temple_strings(obj, feature): 
+    return f"{obj} are {feature}"
