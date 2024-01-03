@@ -1193,3 +1193,22 @@ def stairs_in_20(stairs):
             sum = sum + num
     sum20 = sum * 20
     return sum20
+
+# Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+# Examples (Input -> Output):
+# * "String"      -> "SSttrriinngg"
+# * "Hello World" -> "HHeelllloo  WWoorrlldd"
+# * "1234!_ "     -> "11223344!!__  "
+
+def double_char(s):
+    return ''.join(c * 2 for c in s)
+
+#or
+
+def double_char(s):
+    n = ''
+    for i in s:
+        for j in i:
+            n += i*2
+    return n
