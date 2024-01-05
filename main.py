@@ -1212,3 +1212,19 @@ def double_char(s):
         for j in i:
             n += i*2
     return n
+
+# Your mission is to implement a function that converts the following potentially harmful characters:
+
+# < --> &lt;
+# > --> &gt;
+# " --> &quot;
+# & --> &amp;
+
+def html_special_chars(data): 
+    symbols = {'<': '&lt;', '>': '&gt;', '"': '&quot;', '&': '&amp;'}
+    return "".join(symbols.get(x, x) for x in data)
+
+#or
+
+def html_special_chars(data): 
+    return data.replace('&', "&amp;").replace('>', "&gt;").replace('<', "&lt;").replace('\"', "&quot;")
