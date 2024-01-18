@@ -1280,6 +1280,46 @@ def contamination(text, char):
 def combat(a, b):
     c = a - b
     if c > 0:
-        return c;
+        return c
     else:
-        return 0;
+        return 0
+
+
+# Let's play! You have to return which player won! In case of a draw return Draw!.
+
+# Examples(Input1, Input2 --> Output):
+
+# "scissors", "paper" --> "Player 1 won!"
+# "scissors", "rock" --> "Player 2 won!"
+# "paper", "paper" --> "Draw!"
+
+
+def rps(p1, p2):
+    if (p1 == "scissors" and p2 == "paper") or (p1 == "rock" and p2 == "scissors"):
+        return ("Player 1 won!")
+    elif p1 == "scissors" and p2 == "rock":
+        return ("Player 2 won!")
+    else:
+        return ("Draw!")
+
+
+def rps(p1, p2):
+    beats = {'rock': 'scissors', 'scissors': 'paper', 'paper': 'rock'}
+    if beats[p1] == p2:
+        return "Player 1 won!"
+    if beats[p2] == p1:
+        return "Player 2 won!"
+    return "Draw!"
+
+
+# Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
+
+# S is misinterpreted as 5
+# O is misinterpreted as 0
+# I is misinterpreted as 1
+
+def correct(string):
+    return string.replace('1','I').replace('0','O').replace('5','S')
+
+def correct(string):
+    return string.translate(str.maketrans("501", "SOI"))
