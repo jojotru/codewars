@@ -1455,3 +1455,6 @@ def cannons_ready(gunners):
             result_string += '\n'
         
     return result_string
+
+def generateShape(integer):
+    return '\n'.join('+' * integer for i in range(integer))
