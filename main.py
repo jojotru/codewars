@@ -1436,3 +1436,22 @@ def cannons_ready(gunners):
 
 def cannons_ready(gunners):
     return 'Shiver me timbers!' if 'nay' in gunners.values() else 'Fire!'
+
+
+# I will give you an integer. Give me back a shape that is as long and wide as the integer. The integer will be a whole number between 1 and 50.
+
+# Example
+# n = 3, so I expect a 3x3 square back just like below as a string:
+
+# +++
+# +++
+# +++
+
+ result_string = ''
+    
+    for x in range(int):
+        result_string += ('+' * int) 
+        if (x + 1) != int:
+            result_string += '\n'
+        
+    return result_string
