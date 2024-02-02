@@ -1549,8 +1549,8 @@ def sum_array(arr):
 
 # For example(Input --> Output):
 
-10 --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
- 1 --> [1]
+# 10 --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#  1 --> [1]
 
 
 
@@ -1561,3 +1561,19 @@ def monkey_count(n):
         i+=1
         monkey.append(i)
     return monkey
+
+
+# Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+# [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+def grow(arr):
+	product = 1
+	for i in arr:
+		product *= i
+	return product
+
+
+import math
+def grow(arr):
+    return math.prod(arr)
