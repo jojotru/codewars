@@ -15,3 +15,9 @@
 //     +'30,31,32,33,34'
 
 const toCsvText = array => array.join('\n');
+
+//or
+
+function toCsvText(array) {
+    return array.join('\n');
+ };
