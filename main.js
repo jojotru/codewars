@@ -21,3 +21,17 @@ const toCsvText = array => array.join('\n');
 function toCsvText(array) {
     return array.join('\n');
  };
+
+//  Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
+
+function invert(array) {
+    let a = []
+    for (let i = 0; i < array.length; i++ ){
+      a.push(-array[i])
+    }
+   return a
+ }
